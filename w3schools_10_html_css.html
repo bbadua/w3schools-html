@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>html css</title>
+<style>
+
+h1 {
+	font-size:800%;
+	color:orange;
+	font-family:serif;
+} 
+
+p {
+	
+	font-size:300%;
+	color:lightgray;
+	font-family:sans-serif;
+}
+
+#p01 {
+		font-size:200%;
+		color:orange;
+		border: 5px solid blue;
+}
+
+
+p.border{
+	font-size:200%;
+	color:black;
+	border: 3px solid orange
+}
+
+p.border_padding{
+	font-size:200%;
+	color:black;
+	border: 3px solid orange;
+	padding:30px;
+}
+
+p.border_margin{
+	font-size:200%;
+	color:black;
+	border: 3px solid orange;
+	margin:50px;
+}
+
+p.class{
+	font-size:200%;
+	color:black;
+	margin:50px;
+}
+
+
+<!-- font families: serif, sans-serif, monospace, cursive, and fantasy -->
+
+</style>
+
+
+</head>
+
+<body>
+<h1>html css</h1>
+
+<p>css fonts</p>
+<pre style="margin:50px;">
+&lt;style&gt;
+
+h1 {
+	font-size:800%;
+	font-family:serif;
+	color:orange;
+} 
+
+p {
+	
+	font-size:300%;
+	font-family:sans-serif;
+	color:lightgray;
+}
+
+&lt;/style&gt;
+</pre>
+
+<br>
+<hr>
+
+<p>css border</p>
+<p class="border">This is an example of a paragraph with a border</p>
+<pre style="margin:50px;">
+&lt;style&gt;
+
+p.border{
+	border: 3px solid orange
+}
+
+&lt;/style&gt;
+
+...
+
+&lt;p class="border"&gt;This is an example of a paragraph with a border&lt;/p&gt;
+</pre>
+
+<br>
+<hr>
+
+<p>css padding</p>
+<p class="border_padding">This is an example of a paragraph with a border and padding</p>
+<pre style="margin:50px;">
+&lt;style&gt;
+
+p.border_padding{
+	border: 3px solid orange;
+	padding:30px;
+}
+
+&lt;/style&gt;
+
+...
+
+&lt;p class="border_padding"&gt;This is an example of a paragraph with a border and padding&lt;/p&gt;
+</pre>
+
+<br>
+<hr>
+
+<p>css margin</p>
+<p class="border_margin">This is an example of a paragraph with a border and margin</p>
+<pre style="margin:50px;">
+&lt;style&gt;
+
+p.border_margin{
+	border: 3px solid orange;
+	margin:50px;
+}
+
+&lt;/style&gt;
+
+...
+
+&lt;p class="border_margin"&gt;This is an example of a paragraph with a border and margin&lt;/p&gt;
+</pre>
+
+
+<br>
+<hr>
+
+<p>css id</p>
+<p id="p01">This is an example of a paragraph with a border and margin</p>
+<p id="p01">Trying to reuse an id.  One id for one element is not enforced.  FYI</p>
+<pre style="margin:50px;">
+&lt;style&gt;
+
+#p01 {
+		font-size:200%;
+		color:orange;
+		border: 5px solid blue;
+}
+
+&lt;/style&gt;
+
+...
+
+&lt;p id="p01"&gt;This is an example of a paragraph with a border&lt;/p&gt;
+</pre>
+
+<br>
+<hr>
+
+<p>css class</p>
+<p class="class">See above:  css border, css padding, and css margin.  Classes are used in the examples.</p>
+
+
+</body>
+</html>

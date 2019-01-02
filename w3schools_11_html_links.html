@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>html links</title>
+<style>
+h1 {
+	font-size:800%;
+	color:black;
+	font-family:serif;
+}
+
+p {
+	font-size:400%;
+	color:lightgray;
+	font-family:serif;
+}
+
+a:link {
+	color: blue;
+	font-size:200%;
+}
+
+a:hover {
+	color: orange;
+	font-size:200%;
+}
+
+a:visited {
+	color: lightgray;
+	font-size:200%;
+}
+
+a:active {
+	color: green;
+	font-size:200%;
+}
+
+
+</style>
+
+</head>
+
+<body>
+<h1 id="tothetop">html links</h1>
+<p>syntax</p>
+<pre style="margin:50px">
+<a href="http://www.w3schools.com/html">w3schools</a>
+</pre>
+<br>
+<hr>
+
+<p id="linkcolors">link colors</p>
+<pre style="margin:50px">
+<a href="http://www.google.com">google</a><br>
+<a href="http://www.yahoo.com">yahoo</a><br>
+<a href="http://www.cnn.com">cnn</a>
+</pre>
+
+<br>
+<hr>
+
+<p id="linktargetattribute">target attribute</p>
+<pre style="margin:50px">
+<a href="http://www.google.com" target="_blank">google (_blank)</a><br>
+<a href="http://www.google.com" target="_self">google (_self)</a><br>
+<a href="http://www.google.com" target="_parent">google (_parent)</a><br>
+<a href="http://www.google.com" target="_top">google (_top)</a>
+<!-- a href="http://www.google.com" target="_framename">google (_framename)</a><br -->
+
+<br>
+
+The target attribute can have one of the following values:
+
+_blank - Opens the linked document in a new window or tab
+_self - Opens the linked document in the same window/tab as it was clicked (this is default)
+_parent - Opens the linked document in the parent frame
+_top - Opens the linked document in the full body of the window
+framename - Opens the linked document in a named frame
+
+</pre>
+
+<br>
+<hr>
+
+<p>use image as a link</p>
+<pre style="margin:50px">
+<a href="."><img src="chloe_and_cooper.jpg" alt="cooper and chloe" height="100px" width="100px"></img></a>
+</pre>
+
+<br>
+<hr>
+
+<p>title attribute (tooltip)</p>
+<pre style="margin:50px">
+<a href="http://www.google.com" target="_blank" title="The best search engine in the world">google (_blank)</a><br>
+</pre>
+
+<br>
+<hr>
+
+<p>bookmarks</p>
+<pre style="margin:50px">
+<a href="#tothetop">go to the top...</a>
+<a href="#linkcolors">go to link colors...</a>
+<a href="#linktargetattribute">go to link target attribute...</a>
+<a href="w3schools_01_html_basic.html#basiclists">go to html basic lists... (on another page)</a>
+</pre>
+
+
+
+
+</body>
+</html>
