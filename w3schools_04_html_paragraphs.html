@@ -2,12 +2,19 @@
 <html>
 <head>
 <title>html paragraphs</title>
+p {
+	font-size:12pt;
+}
+
+pre {
+	font-size:12pt;
+}
 </head>
 <body>
 
 <h1 style="font-size:800%">html paragraphs</h1>
 
-<h1 style="color:lightgray;font-size:400%;">paragraph (p)</h1>
+<h1 style="color:lightgray;font-size:400%;">paragraph</h1>
 
 <p>
 This     paragraph has a lot of spaces.
@@ -19,13 +26,26 @@ This paragraph    has a lot of spaces.
 This paragraph has a        lot of spaces.
 </p>
 
+<p>NOTE: spaces are removed.</p>
 
-<h5>NOTE: spaces are removed.</h5>
+<pre style="margin:50px;color:blue;">
+&lt;p&gt;
+This     paragraph has a lot of spaces.
+
+This paragraph has a lot of     spaces.
+
+This paragraph    has a lot of spaces.
+
+This paragraph has a        lot of spaces.
+&lt;/p&gt;
+</pre>
+
 
 <br>
 <hr>
 
-<h1 style="color:lightgray;font-size:400%;">preformated text (pre)</h1>
+<h1 style="color:lightgray;font-size:400%;">preformated text
+</h1>
 <pre>
 This     paragraph has a lot of spaces.
 
@@ -35,7 +55,17 @@ This paragraph    has a lot of spaces.
 
 This paragraph has a        lot of spaces.
 </pre>
+<pre style="margin:50px;color:blue;">
+&lt;pre&gt;
+This     paragraph has a lot of spaces.
 
+This paragraph has a lot of     spaces.
+
+This paragraph    has a lot of spaces.
+
+This paragraph has a        lot of spaces.
+&lt;/pre&gt;
+</pre>
 
 
 

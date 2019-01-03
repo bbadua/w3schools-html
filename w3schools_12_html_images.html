@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>html images</title>
+<style>
+h1 {
+	font-size:800%;
+	color:black;
+	font-family:serif;
+}
+
+p {
+	font-size:400%;
+	color:lightgray;
+	font-family:serif;
+}
+</style>
+
+</head>
+
+<body>
+<h1>html images</h1>
+
+<p>images</p>
+
+<img src="chloe_and_cooper.jpg" alt="Chloe and cooper cuddling" width=200px height=100px>
+<img src="chloe_and_cooper.jpg" alt="Chloe and cooper cuddling" width=300px height=200px>
+<img src="chloe_and_cooper.jpg" alt="Chloe and cooper cuddling" width=400px height=300px>
+
+<pre style="font-size:200%;margin:50px">
+&lt;img src="chloe_and_cooper.jpg" alt="Chloe and cooper cuddling" width=200px height=100px&gt;
+&lt;img src="chloe_and_cooper.jpg" alt="Chloe and cooper cuddling" width=300px height=200px&gt;
+&lt;img src="chloe_and_cooper.jpg" alt="Chloe and cooper cuddling" width=400px height=300px&gt;
+</pre>
+
+
+
+<br>
+<br>
+<hr>
+
+<p>alt attribute</p>
+
+<!-- img src="chloe_and_cooper.jpg" width=400px height=300px --><!-- Not sure if the statement above is true... -->
+<img src="NO_IMAGE.jpg" alt="Chloe and cooper cuddling (alt attribute)" width=400px height=300px>
+<pre style="font-size:200%;margin:50px">
+The alt attribute is required. A web page will not validate correctly without it. (not enforced)
+
+&lt;img src="NO_IMAGE.jpg" <b style="color:blue;">alt="Chloe and cooper cuddling (alt attribute)"</b> width=400px height=300px&gt;
+
+</pre>
+
+
+
+<br>
+<hr>
+
+<p>width and height, or style?</p>
+<img src="chloe_and_cooper.jpg" alt="Chloe and cooper cuddling" width=400px height=300px>
+<img src="chloe_and_cooper.jpg" alt="Chloe and cooper cuddling" style="width:400px;height:300px;">
+<pre style="font-size:200%;margin:50px;">
+&lt;img src="chloe_and_cooper.jpg" alt="Chloe and cooper cuddling" <b style="color:blue;">width=400px height=300px</b>&gt;
+&lt;img src="chloe_and_cooper.jpg" alt="Chloe and cooper cuddling" <b style="color:blue;">style="width:400px;height:300px;"</b>&gt;
+<br>
+results are the same
+</pre>
+
+<br>
+<hr>
+
+<p>image in another folder</p>
+<pre style="font-size:200%;margin:50px;">
+&lt;img src="<b style="color:blue;">/folder-path/image-name</b>" alt="..." style="..."&gt;
+</pre>
+
+<br>
+<hr>
+
+<p>image on another server</p>
+<pre style="font-size:200%;margin:50px;">
+&lt;img src="<b style="color:blue;">url/imgage-name</b>" alt="..." style="..."&gt;
+</pre>
+
+<br>
+<hr>
+
+<p>animated images</p>
+<pre style="font-size:200%;margin:50px;">
+&lt;img src="<b style="color:blue;">animated-gif-name</b>" alt="..." style="..."&gt;
+</pre>
+
+<br>
+<hr>
+
+<p>image as a link</p>
+<pre style="font-size:200%;margin:50px;">
+See html links
+</pre>
+
+<br>
+<hr>
+
+<p>image floating</p>
+<p style="font-size:20pt;color:black;"><img src="chloe_and_cooper.jpg" alt="chloe and cooper cuddling to the left" style="float:left;width:50px;height:50px;">
+The image will float to the left of the text</p>
+
+
+<p style="font-size:20pt;color:black;"><img src="chloe_and_cooper.jpg" alt="chloe and cooper cuddling to the right" style="float:right;width:50px;height:50px;">
+The image will float to the right of the text</p>
+
+<br>
+<hr>
+
+<p>image maps</p>
+
+<pre style="font-size:200%;margin:50px;">
+&lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap"&gt;
+
+&lt;map name="workmap"&gt;
+  &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"&gt;
+  &lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"&gt;
+  &lt;area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm"&gt;
+&lt;/map&gt;
+</pre>
+
+
+
+<br>
+<hr>
+
+<p>picture element</p>
+<picture>
+<source media="(min-width:600px)" srcset="600px.jpg">
+<source media="(min-width:400px)" srcset="400px.jpg">
+<img src="200px.jpg" alt="200 pixels" style="width:auto;">
+</picture>
+<pre style="margin:50px">
+&lt;picture&gt;
+&lt;source media="(min-width:600px)" srcset="600px.jpg"&gt;
+&lt;source media="(min-width:400px)" srcset="400px.jpg"&gt;
+&lt;img src="200px.jpg" alt="200 pixels" style="width:auto;"&gt;
+&lt;/picture&gt;
+
+NOTE: do not forget the parenthesis in the media attribute.
+</pre>
+
+
+
+
+
+</body>
+</html>
