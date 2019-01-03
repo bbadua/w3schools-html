@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
+<title>html quotations</title>
+<style>
+b {
+	color:blue;
+}
+
+p {
+	font-size:12pt;
+}
+</style>
+
 </head>
 <body>
 <h1 style="font-size:800%;">html quotations</h1>
@@ -10,9 +20,11 @@
 <h1 style="color:lightgray;font-size:400%;">quote (short)</h1>
 <p>Here is a quote from the movie North Shore: <q>Hey hauole? Howlee to you too! Hey...He so hauole he don't even know he hauole.</q></p>
 
-<br>
+<p style="margin:50px;">
+&lt;p&gt;Here is a quote from the movie North Shore: <b>&lt;q&gt;</b>Hey hauole? Howlee to you too! Hey...He so hauole he don't even know he hauole.<b>&lt;/q&gt;</b>&lt;/p&gt;
+</p>
+
 <hr>
-<br>
 
 <h1 style="color:lightgray;font-size:400%;">blockquote</h1>
 <p>Here is a quote from the movie North Shore:</p>
@@ -20,16 +32,22 @@
 Hey hauole? Howlee to you too! Hey...He so hauole he don't even know he hauole.
 </blockquote>
 
-<br>
+<p style="margin:50px;">
+<b>&lt;blockquote cite="http://www.moviequotes.com/fullquote.cgi?qnum=28079"&gt;</b>
+Hey hauole? Howlee to you too! Hey...He so hauole he don't even know he hauole.<b>
+&lt;/blockquote&gt;</b>
+</p>
+
 <hr>
-<br>
 
 <h1 style="color:lightgray;font-size:400%;">abbreviation</h1>
 <p>The <abbr title="World Surf League">WSL</abbr> is a professional surfing organization.</p>
 
-<br>
+<p style="margin:50px;">
+&lt;p&gt;The <b>&lt;abbr title="World Surf League"&gt;</b>WSL<b>&lt;/abbr&gt;</b> is a professional surfing organization.&lt;/p&gt;
+</p>
+
 <hr>
-<br>
 
 <h1 style="color:lightgray;font-size:400%;">address</h1>
 <address>
@@ -39,12 +57,24 @@ Seal Beach CA 90740<br>
 USA<br>
 </address>
 
-<br>
+<p style="margin:50px;">
+<b>&lt;address&gt;</b><br>
+Braden Badua&lt;br&gt;<br>
+333 1&lt;sup&gt;st&lt;/sup&gt; Street Apt F305&lt;br&gt;<br>
+Seal Beach CA 90740&lt;br&gt<br>
+USA&lt;br&gt;<br>
+<b>&lt;/address&gt;</b>
+</p>
+
+
 <hr>
-<br>
 
 <h1 style="color:lightgray;font-size:400%;">cite</h1>
 <p><cite>The boto</cite> by Braden Badua, created in 1970</p>
+
+<p style="margin:50px;">
+&lt;p&gt;<b>&lt;cite&gt;</b>The boto<b>&lt;/cite&gt;</b> by Braden Badua, created in 1970&lt;/p&gt;
+</p>
 
 <br>
 <hr>
@@ -53,7 +83,9 @@ USA<br>
 <h1 style="color:lightgray;font-size:400%;">bi-directional override (bdo)</h1>
 <bdo dir="rtl">You spin me right round baby right round like a record baby right round round round</bdo>
 
-
+<p style="margin:50px;">
+<b>&lt;bdo dir="rtl"&gt;</b>You spin me right round baby right round like a record baby right round round round<b>&lt;/bdo&gt;</b>
+</p>
 
 
 </body>

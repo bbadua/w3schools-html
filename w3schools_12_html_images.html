@@ -15,6 +15,11 @@ p {
 	color:lightgray;
 	font-family:serif;
 }
+b {
+	color:blue;
+	font-size:12pt;
+}
+
 </style>
 
 </head>
@@ -28,10 +33,10 @@ p {
 <img src="chloe_and_cooper.jpg" alt="Chloe and cooper cuddling" width=300px height=200px>
 <img src="chloe_and_cooper.jpg" alt="Chloe and cooper cuddling" width=400px height=300px>
 
-<pre style="font-size:200%;margin:50px">
-&lt;img src="chloe_and_cooper.jpg" alt="Chloe and cooper cuddling" width=200px height=100px&gt;
-&lt;img src="chloe_and_cooper.jpg" alt="Chloe and cooper cuddling" width=300px height=200px&gt;
-&lt;img src="chloe_and_cooper.jpg" alt="Chloe and cooper cuddling" width=400px height=300px&gt;
+<pre style="font-size:12pt;margin:50px">
+&lt;<b>img</b> <b>src</b>="chloe_and_cooper.jpg" <b>alt</b>="Chloe and cooper cuddling" width=200px height=100px&gt;
+&lt;<b>img</b> <b>src</b>="chloe_and_cooper.jpg" <b>alt</b>="Chloe and cooper cuddling" width=300px height=200px&gt;
+&lt;<b>img</b> <b>src</b>="chloe_and_cooper.jpg" <b>alt</b>="Chloe and cooper cuddling" width=400px height=300px&gt;
 </pre>
 
 
@@ -44,10 +49,10 @@ p {
 
 <!-- img src="chloe_and_cooper.jpg" width=400px height=300px --><!-- Not sure if the statement above is true... -->
 <img src="NO_IMAGE.jpg" alt="Chloe and cooper cuddling (alt attribute)" width=400px height=300px>
-<pre style="font-size:200%;margin:50px">
+<pre style="font-size:12pt;margin:50px">
 The alt attribute is required. A web page will not validate correctly without it. (not enforced)
 
-&lt;img src="NO_IMAGE.jpg" <b style="color:blue;">alt="Chloe and cooper cuddling (alt attribute)"</b> width=400px height=300px&gt;
+&lt;img src="NO_IMAGE.jpg" <b>alt="Chloe and cooper cuddling (alt attribute)"</b> width=400px height=300px&gt;
 
 </pre>
 
@@ -59,9 +64,9 @@ The alt attribute is required. A web page will not validate correctly without it
 <p>width and height, or style?</p>
 <img src="chloe_and_cooper.jpg" alt="Chloe and cooper cuddling" width=400px height=300px>
 <img src="chloe_and_cooper.jpg" alt="Chloe and cooper cuddling" style="width:400px;height:300px;">
-<pre style="font-size:200%;margin:50px;">
-&lt;img src="chloe_and_cooper.jpg" alt="Chloe and cooper cuddling" <b style="color:blue;">width=400px height=300px</b>&gt;
-&lt;img src="chloe_and_cooper.jpg" alt="Chloe and cooper cuddling" <b style="color:blue;">style="width:400px;height:300px;"</b>&gt;
+<pre style="font-size:12pt;margin:50px;">
+&lt;img src="chloe_and_cooper.jpg" alt="Chloe and cooper cuddling" <b>width=400px height=300px</b>&gt;
+&lt;img src="chloe_and_cooper.jpg" alt="Chloe and cooper cuddling" <b>style="width:400px;height:300px;"</b>&gt;
 <br>
 results are the same
 </pre>
@@ -70,31 +75,31 @@ results are the same
 <hr>
 
 <p>image in another folder</p>
-<pre style="font-size:200%;margin:50px;">
-&lt;img src="<b style="color:blue;">/folder-path/image-name</b>" alt="..." style="..."&gt;
+<pre style="font-size:12pt;margin:50px;">
+&lt;img src="<b>/folder-path/image-name</b>" alt="..." style="..."&gt;
 </pre>
 
 <br>
 <hr>
 
 <p>image on another server</p>
-<pre style="font-size:200%;margin:50px;">
-&lt;img src="<b style="color:blue;">url/imgage-name</b>" alt="..." style="..."&gt;
+<pre style="font-size:12pt;margin:50px;">
+&lt;img src="<b>url/imgage-name</b>" alt="..." style="..."&gt;
 </pre>
 
 <br>
 <hr>
 
 <p>animated images</p>
-<pre style="font-size:200%;margin:50px;">
-&lt;img src="<b style="color:blue;">animated-gif-name</b>" alt="..." style="..."&gt;
+<pre style="font-size:12pt;margin:50px;">
+&lt;img src="<b>animated-gif-name</b>" alt="..." style="..."&gt;
 </pre>
 
 <br>
 <hr>
 
 <p>image as a link</p>
-<pre style="font-size:200%;margin:50px;">
+<pre style="font-size:12pt;margin:50px;">
 See html links
 </pre>
 
@@ -105,19 +110,28 @@ See html links
 <p style="font-size:20pt;color:black;"><img src="chloe_and_cooper.jpg" alt="chloe and cooper cuddling to the left" style="float:left;width:50px;height:50px;">
 The image will float to the left of the text</p>
 
+<pre>
+&lt;p style="font-size:20pt;color:black;"&gt;&lt;img src="chloe_and_cooper.jpg" alt="chloe and cooper cuddling to the left" style="<b>float:left</b>;width:50px;height:50px;"&gt;
+The image will float to the left of the text&lt;/p&gt;
+</pre>
+
 
 <p style="font-size:20pt;color:black;"><img src="chloe_and_cooper.jpg" alt="chloe and cooper cuddling to the right" style="float:right;width:50px;height:50px;">
 The image will float to the right of the text</p>
 
-<br>
+<pre>
+&lt;p style="font-size:20pt;color:black;"&gt;&lt;img src="chloe_and_cooper.jpg" alt="chloe and cooper cuddling to the right" style="<b>float:right</b>;width:50px;height:50px;"&gt;
+The image will float to the right of the text&lt;/p&gt;
+</pre>
+
 <hr>
 
 <p>image maps</p>
 
-<pre style="font-size:200%;margin:50px;">
-&lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap"&gt;
+<pre style="font-size:12pt;margin:50px;">
+&lt;img src="workplace.jpg" alt="Workplace" <b>usemap="#workmap"</b>&gt;
 
-&lt;map name="workmap"&gt;
+<b>&lt;map name="workmap"&gt;</b>
   &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"&gt;
   &lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"&gt;
   &lt;area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm"&gt;

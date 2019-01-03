@@ -18,6 +18,11 @@ p {
 	font-family:sans-serif;
 }
 
+pre {
+	margin:50px;
+	font-size:12pt;
+}
+
 #p01 {
 		font-size:200%;
 		color:orange;
@@ -51,6 +56,9 @@ p.class{
 	margin:50px;
 }
 
+b {
+	color:blue;
+}
 
 <!-- font families: serif, sans-serif, monospace, cursive, and fantasy -->
 
@@ -63,35 +71,33 @@ p.class{
 <h1>html css</h1>
 
 <p>css fonts</p>
-<pre style="margin:50px;">
+<pre>
 &lt;style&gt;
 
 h1 {
-	font-size:800%;
-	font-family:serif;
-	color:orange;
+	<b>font-size</b>:800%;
+	<b>font-family</b>:serif;
+	<b>color</b>:orange;
 } 
 
 p {
 	
-	font-size:300%;
-	font-family:sans-serif;
-	color:lightgray;
+	<b>font-size</b>:300%;
+	<b>font-family</b>:sans-serif;
+	<b>color</b>:lightgray;
 }
-
 &lt;/style&gt;
 </pre>
 
-<br>
 <hr>
 
 <p>css border</p>
 <p class="border">This is an example of a paragraph with a border</p>
-<pre style="margin:50px;">
+<pre>
 &lt;style&gt;
 
 p.border{
-	border: 3px solid orange
+	<b>border</b>: 3px solid orange
 }
 
 &lt;/style&gt;
@@ -101,17 +107,16 @@ p.border{
 &lt;p class="border"&gt;This is an example of a paragraph with a border&lt;/p&gt;
 </pre>
 
-<br>
 <hr>
 
 <p>css padding</p>
 <p class="border_padding">This is an example of a paragraph with a border and padding</p>
-<pre style="margin:50px;">
+<pre>
 &lt;style&gt;
 
 p.border_padding{
 	border: 3px solid orange;
-	padding:30px;
+	<b>padding</b>:30px;
 }
 
 &lt;/style&gt;
@@ -126,12 +131,12 @@ p.border_padding{
 
 <p>css margin</p>
 <p class="border_margin">This is an example of a paragraph with a border and margin</p>
-<pre style="margin:50px;">
+<pre>
 &lt;style&gt;
 
 p.border_margin{
 	border: 3px solid orange;
-	margin:50px;
+	<b>margin</b>:50px;
 }
 
 &lt;/style&gt;
@@ -141,17 +146,15 @@ p.border_margin{
 &lt;p class="border_margin"&gt;This is an example of a paragraph with a border and margin&lt;/p&gt;
 </pre>
 
-
-<br>
 <hr>
 
 <p>css id</p>
 <p id="p01">This is an example of a paragraph with a border and margin</p>
 <p id="p01">Trying to reuse an id.  One id for one element is not enforced.  FYI</p>
-<pre style="margin:50px;">
+<pre>
 &lt;style&gt;
 
-#p01 {
+<b>#p01</b> {
 		font-size:200%;
 		color:orange;
 		border: 5px solid blue;
@@ -161,7 +164,7 @@ p.border_margin{
 
 ...
 
-&lt;p id="p01"&gt;This is an example of a paragraph with a border&lt;/p&gt;
+&lt;p <b>id="p01"</b>&gt;This is an example of a paragraph with a border&lt;/p&gt;
 </pre>
 
 <br>
@@ -169,7 +172,19 @@ p.border_margin{
 
 <p>css class</p>
 <p class="class">See above:  css border, css padding, and css margin.  Classes are used in the examples.</p>
+<pre>
+&lt;style&gt;
 
+p.<b>border</b>{
+	border: 3px solid orange
+}
+
+&lt;/style&gt;
+
+...
+
+&lt;p <b>class="border"</b>&gt;This is an example of a paragraph with a border&lt;/p&gt;
+</pre>
 
 </body>
 </html>
