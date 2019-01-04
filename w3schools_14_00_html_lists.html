@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>html lists</title>
+<style>
+h1 {
+	font-size:800%;
+	color:black;
+	font-family:serif;
+}
+
+p {
+	font-size:400%;
+	color:lightgray;
+	font-family:serif;
+}
+pre {
+	margin:50px;
+	font-size:12pt;
+}
+
+b{
+	color:blue;
+}
+
+table, th, td {
+	font-size:12pt;
+	border: 1px solid black;
+	border-collapse:collapse;
+}
+
+th, td {
+	text-align:left;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>html lists</h1>
+
+<p>lists</p>
+<table style="width:600px;">
+<tr>
+<th>unordered list</th>
+<th>ordered list</th>
+</tr>
+<tr>
+<td>
+<ul>
+<li>coffee</li>
+<li>tea</li>
+<li>milk</li>
+</ul>
+</td>
+
+<td>
+<ol>
+<li>coffee</li>
+<li>tea</li>
+<li>milk</li>
+</ol>
+</td>
+</tr>
+
+</table>
+
+
+<p>unordered list</p>
+<ul>
+<li>coffee</li>
+<li>tea</li>
+<li>milk</li>
+</ul>
+<pre>
+&lt;ul&gt;
+&lt;li&gt;coffee&lt;/li&gt;
+&lt;li&gt;tea&lt;/li&gt;
+&lt;li&gt;milk&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<hr>
+
+<p>unordered list - list item marker</p>
+
+<h3>disc</h3>
+<ul style="list-style-type:disc;">
+<li>coffee</li>
+<li>tea</li>
+<li>milk</li>
+</ul>
+
+<pre>
+&lt;ul style="<b>list-style-type</b>:disc;"&gt;
+&lt;li&gt;coffee&lt;/li&gt;
+&lt;li&gt;tea&lt;/li&gt;
+&lt;li&gt;milk&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<h3>circle</h3>
+<ul style="list-style-type:circle;">
+<li>coffee</li>
+<li>tea</li>
+<li>milk</li>
+</ul>
+
+<pre>
+&lt;ul style="<b>list-style-type</b>:circle;"&gt;
+&lt;li&gt;coffee&lt;/li&gt;
+&lt;li&gt;tea&lt;/li&gt;
+&lt;li&gt;milk&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<h3>square</h3>
+<ul style="list-style-type:square;">
+<li>coffee</li>
+<li>tea</li>
+<li>milk</li>
+</ul>
+
+<pre>
+&lt;ul style="<b>list-style-type</b>:square;"&gt;
+&lt;li&gt;coffee&lt;/li&gt;
+&lt;li&gt;tea&lt;/li&gt;
+&lt;li&gt;milk&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<h3>none</h3>
+<ul style="list-style-type:none;">
+<li>coffee</li>
+<li>tea</li>
+<li>milk</li>
+</ul>
+
+<pre>
+&lt;ul style="<b>list-style-type</b>:none;"&gt;
+&lt;li&gt;coffee&lt;/li&gt;
+&lt;li&gt;tea&lt;/li&gt;
+&lt;li&gt;milk&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<hr>
+
+<p>ordered list</p>
+<ol>
+<li>coffee</li>
+<li>tea</li>
+<li>milk</li>
+</ol>
+<pre>
+&lt;ol&gt;
+&lt;li&gt;coffee&lt;/li&gt;
+&lt;li&gt;tea&lt;/li&gt;
+&lt;li&gt;milk&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+
+<hr>
+
+<p>ordered list - type attribute</p>
+
+<h3>type = "1" (numbers)</h3>
+<ol type="1">
+<li>coffee</li>
+<li>tea</li>
+<li>milk</li>
+</ol>
+<pre>
+&lt;ol <b>type="1"</b>&gt;
+&lt;li&gt;coffee&lt;/li&gt;
+&lt;li&gt;tea&lt;/li&gt;
+&lt;li&gt;milk&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+
+<h3>type = "A"</h3>
+<ol type="A">
+<li>coffee</li>
+<li>tea</li>
+<li>milk</li>
+</ol>
+<pre>
+&lt;ol <b>type="A"</b>&gt;
+&lt;li&gt;coffee&lt;/li&gt;
+&lt;li&gt;tea&lt;/li&gt;
+&lt;li&gt;milk&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+
+<h3>type = "a"</h3>
+<ol type="a">
+<li>coffee</li>
+<li>tea</li>
+<li>milk</li>
+</ol>
+<pre>
+&lt;ol <b>type="a"</b>&gt;
+&lt;li&gt;coffee&lt;/li&gt;
+&lt;li&gt;tea&lt;/li&gt;
+&lt;li&gt;milk&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+
+<h3>type = "I"</h3>
+<ol type="I">
+<li>coffee</li>
+<li>tea</li>
+<li>milk</li>
+</ol>
+<pre>
+&lt;ol <b>type="I"</b>&gt;
+&lt;li&gt;coffee&lt;/li&gt;
+&lt;li&gt;tea&lt;/li&gt;
+&lt;li&gt;milk&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+
+<h3>type = "i"</h3>
+<ol type="i">
+<li>coffee</li>
+<li>tea</li>
+<li>milk</li>
+</ol>
+<pre>
+&lt;ol <b>type="i"</b>&gt;
+&lt;li&gt;coffee&lt;/li&gt;
+&lt;li&gt;tea&lt;/li&gt;
+&lt;li&gt;milk&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+
+<hr>
+
+<p>description list</p>
+<dl>
+<dt>coffee</dt>
+<dd>black hot drink</dd>
+<dt>milk</dt>
+<dd>white cold drink</dd>
+</dl>
+
+<pre>
+&lt;dl&gt;
+&lt;dt&gt;coffee&lt;/dt&gt;
+&lt;dd&gt;black hot drink&lt;/dd&gt;
+&lt;dt&gt;milk&lt;/dt&gt;
+&lt;dd&gt;white cold drink&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+
+<hr>
+
+<p>nested list</p>
+
+<table style="	width:600px;">
+<tr>
+<th>unordered nested</th>
+<th>ordered nested</th>
+</tr>
+
+<tr>
+<td>
+<ul>
+<li>coffee</li>
+<ul>
+<li>black</li>
+<li>cream</li>
+<li>iced</li>
+</ul>
+<li>tea</li>
+<ul>
+<li>hot</li>
+<li>iced</li>
+<li>with boba</li>
+</ul>
+<li>softdrink</li>
+<ul>
+<li>coca cola</li>
+<li>7up</li>
+<li>dr. pepper</li>
+</ul>
+</ul>
+</td>
+
+<td>
+<ol>
+<li>coffee</li>
+<ol>
+<li>black</li>
+<li>cream</li>
+<li>iced</li>
+</ol>
+<li>tea</li>
+<ol>
+<li>hot</li>
+<li>iced</li>
+<li>with boba</li>
+</ol>
+<li>softdrink</li>
+<ol>
+<li>coca cola</li>
+<li>7up</li>
+<li>dr. pepper</li>
+</ol>
+</ol>
+</td>
+</tr>
+
+<tr>
+<td><pre>
+&lt;ul&gt;
+&lt;li&gt;coffee&lt;/li&gt;
+<b>&lt;ul&gt;
+&lt;li&gt;black&lt;/li&gt;
+&lt;li&gt;cream&lt;/li&gt;
+&lt;li&gt;iced&lt;/li&gt;
+&lt;/ul&gt;</b>
+&lt;li&gt;tea&lt;/li&gt;
+<b>&lt;ul&gt;
+&lt;li&gt;hot&lt;/li&gt;
+&lt;li&gt;iced&lt;/li&gt;
+&lt;li&gt;with boba&lt;/li&gt;
+&lt;/ul&gt;</b>
+&lt;li&gt;softdrink&lt;/li&gt;
+<b>&lt;ul&gt;
+&lt;li&gt;coca cola&lt;/li&gt;
+&lt;li&gt;7up&lt;/li&gt;
+&lt;li&gt;dr. pepper&lt;/li&gt;
+&lt;/ul&gt;</b>
+&lt;/ul&gt;
+</pre></td>
+
+<td><pre>
+&lt;ol&gt;
+&lt;li&gt;coffee&lt;/li&gt;
+<b>&lt;ol&gt;
+&lt;li&gt;black&lt;/li&gt;
+&lt;li&gt;cream&lt;/li&gt;
+&lt;li&gt;iced&lt;/li&gt;
+&lt;/ol&gt;</b>
+&lt;li&gt;tea&lt;/li&gt;
+<b>&lt;ol&gt;
+&lt;li&gt;hot&lt;/li&gt;
+&lt;li&gt;iced&lt;/li&gt;
+&lt;li&gt;with boba&lt;/li&gt;
+&lt;/ol&gt;</b>
+&lt;li&gt;softdrink&lt;/li&gt;
+<b>&lt;ol&gt;
+&lt;li&gt;coca cola&lt;/li&gt;
+&lt;li&gt;7up&lt;/li&gt;
+&lt;li&gt;dr. pepper&lt;/li&gt;
+&lt;/ol&gt;</b>
+&lt;/ol&gt;
+</pre></td>
+</tr>
+</table>
+
+<hr>
+
+<p>control list counting</p>
+
+<h3>start="??"</h3>
+
+<table style="width:600px;">
+<tr>
+<td style="width:50%;">
+<ol type="1" start="46">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<ol type="A" start="31">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<ol type="a" start="29">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<ol type="I" start="101">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<ol type="i" start="66">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<td>
+<td style="width:50%;"><pre>
+&lt;ol type="1" <b>start="46"</b>&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol type="A" <b>="31"</b>&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol type="a" <b>start="29"</b>&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol type="I" <b>start="101"</b>&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol type="i" <b>start="66"</b>&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+</pre></td>
+</tr>
+</table>
+
+
+
+</body>
+</html>
