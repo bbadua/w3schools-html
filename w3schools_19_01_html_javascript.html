@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>html javascript</title>
+<style>
+#lessonHeader {
+	font-size:800%;
+	color:black;
+	font-family:serif;
+}
+
+#lessonParagraph {
+	font-size:400%;
+	color:lightgray;
+	font-family:serif;
+}
+
+pre {
+	margin:50px;
+	font-size:12pt;
+}
+
+b{
+	color:blue;
+}
+
+</style>
+
+</head>
+
+<body>
+<h1 id="lessonHeader">html javascript</h1>
+
+<p id="lessonParagraph">changing HTML content, with innerHTML</p>
+
+<p id="demo">Hello javascript</p>
+
+<button onclick="updateDemo();">Click me</button>
+
+<script>
+function updateDemo(){
+	document.getElementById("demo").innerHTML = "Goodbye";
+}
+</script>
+
+<pre>
+&lt;p id="<b>demo</b>"&gt;Hello javascript&lt;/p&gt;
+
+&lt;button onclick="<b>updateDemo()</b>;"&gt;Click me&lt;/button&gt;
+
+&lt;script&gt;
+function <b>updateDemo()</b>{
+	document.getElementById("<b>demo</b>").<b>innerHTML</b> = "Goodbye";
+}
+&lt;/script&gt;
+</pre>
+
+</body>
+</html>

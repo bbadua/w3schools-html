@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>html classes</title>
+<style>
+
+b {
+	color:blue;
+}
+
+span.note{
+	font-size:120%;
+	color:blue;
+}
+
+pre {
+	font-size:12pt;
+	margin:50px;
+}
+
+</style>
+
+</head>
+
+<body>
+<h1 style="font-size:800%;">html classes</h1>
+
+<p style="font-size:400%;color:lightgray;">inline elements</p>
+
+<h1>I <span class="note">love</span> to surf</h1>
+<p>I <span class="note">love</span> to surf</p>
+<p class="note">I love to surf</p>
+
+<pre>
+&lt;style&gt;
+
+<b>span.note</b>{
+	font-size:120%;
+	color:blue;
+}
+
+&lt;/style&gt;
+
+...
+
+&lt;h1&gt;I <b>&lt;span class="note"&gt;</b>love&lt;/span&gt; to surf&lt;/h1&gt;		OK
+&lt;p&gt;I <b>&lt;span class="note"&gt;</b>love&lt;/span&gt; to surf&lt;/p&gt;			OK
+&lt;p class="note"&gt;I love to surf&lt;/p&gt;				FAIL - note applied with span element
+</pre>
+
+
+</body>
+</html>

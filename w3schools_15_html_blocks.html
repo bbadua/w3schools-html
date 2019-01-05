@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>html blocks</title>
+<style>
+h1 {
+	font-size:800%;
+	color:black;
+	font-family:serif;
+}
+
+p {
+	font-size:400%;
+	color:lightgray;
+	font-family:serif;
+}
+pre {
+	margin:50px;
+	font-size:12pt;
+}
+
+b{
+	color:blue;
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>html blocks</h1>
+
+<p>&lt;div&gt; vs &lt;span&gt;</p>
+
+<h2>div</h2>
+<div style="font-size:16pt;">hello</div>
+<div style="font-size:16pt;">world</div>
+<pre>
+&lt;div&gt;hello&lt;/div&gt;
+&lt;div&gt;world&lt;/div&gt;
+
+NOTE: &lt;div&gt; is a block element.  It will start on a new line and take up an entire width.
+</pre>
+
+<h2>span</h2>
+
+<span style="font-size:16pt;">hello</span>
+<span style="font-size:16pt;">world</span>
+
+<pre>
+&lt;span&gt;hello&lt;/span&gt;
+&lt;span&gt;world&lt;/span&gt;
+
+NOTE: &lt;span&gt; is an inline element. Does NOT start a new line.  Does NOT take up entire width.  Can be place within other elements.</pre>
+
+<hr>
+
+<p>block level elements</p>
+<table>
+<tr>
+<td><pre>
+&lt;address&gt;
+&lt;article&gt;
+&lt;aside&gt;
+&lt;blockquote&gt;
+&lt;canvas&gt;
+&lt;dd&gt;
+&lt;div&gt;
+&lt;dl&gt;
+&lt;dt&gt;
+&lt;fieldset&gt;
+</pre></td>
+<td><pre>
+&lt;figcaption&gt;
+&lt;figure&gt;
+&lt;footer&gt;
+&lt;form&gt;
+&lt;h1&gt;-&lt;h6&gt;
+&lt;header&gt;
+&lt;hr&gt;
+&lt;li&gt;
+&lt;main&gt;
+&lt;nav&gt;
+</pre></td>
+<td><pre>
+&lt;noscript&gt;
+&lt;ol&gt;
+&lt;output&gt;
+&lt;p&gt;
+&lt;pre&gt;
+&lt;section&gt;
+&lt;table&gt;
+&lt;tfoot&gt;
+&lt;ul&gt;
+&lt;video&gt;
+</pre></td>
+</tr>
+</table>
+
+<hr>
+
+<p>inline elements</p>
+<table>
+<tr>
+<td><pre>
+&lt;a&gt;
+&lt;abbr&gt;
+&lt;acronym&gt;
+&lt;b&gt;
+&lt;bdo&gt;
+&lt;big&gt;
+&lt;br&gt;
+&lt;button&gt;
+&lt;cite&gt;
+&lt;code&gt;
+&lt;dfn&gt;
+</pre></td>
+<td><pre>
+&lt;em&gt;
+&lt;i&gt;
+&lt;img&gt;
+&lt;input&gt;
+&lt;kbd&gt;
+&lt;label&gt;
+&lt;map&gt;
+&lt;object&gt;
+&lt;q&gt;
+&lt;samp&gt;
+&lt;script&gt;
+</pre></td>
+<td><pre>
+&lt;select&gt;
+&lt;small&gt;
+&lt;span&gt;
+&lt;strong&gt;
+&lt;sub&gt;
+&lt;sup&gt;
+&lt;textarea&gt;
+&lt;time&gt;
+&lt;tt&gt;
+&lt;var&gt;
+
+</pre></td>
+</tr>
+</table>
+
+<hr>
+
+<p>&lt;div&gt; element</p>
+
+<div style="color:white;border: 5px dotted black; background-color:orange">
+<h2>Honolulu</h2>
+  <p style="margin:50px;font-size:12pt;color:black;">Honolulu is the capital city of the state of Hawai'i, USA. It's the most populous city in the Hawaiian Islands, with a population of 1,000,000+</p>
+</div>
+
+<hr>
+
+<p>&lt;span&gt; element</p>
+<h2>Hawai'i is a <span style="color:blue;">beautiful</span> place.</h2>
+
+</body>
+</html>

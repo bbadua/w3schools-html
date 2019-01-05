@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>html javascript</title>
+<style>
+#lessonHeader {
+	font-size:800%;
+	color:black;
+	font-family:serif;
+}
+
+#lessonParagraph {
+	font-size:400%;
+	color:lightgray;
+	font-family:serif;
+}
+
+pre {
+	margin:50px;
+	font-size:12pt;
+}
+
+b{
+	color:blue;
+}
+
+</style>
+
+</head>
+
+<body>
+<h1 id="lessonHeader">html javascript</h1>
+
+<p id="lessonParagraph">&lt;script&gt; tag</p>
+
+<p id="exParagraph">Initial load</p>
+
+<pre>
+&lt;p id="<b>exParagraph</b>"&gt;Initial load&lt;/p&gt;
+
+
+&lt;script&gt;
+document.getElementById("<b>exParagraph</b>").innerHTML = "Message loaded";
+&lt;/script&gt;
+</pre>
+
+<script>
+document.getElementById("exParagraph").innerHTML = "Message loaded";
+</script>
+
+
+
+</body>
+</html>

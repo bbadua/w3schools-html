@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>html javascript</title>
+<style>
+#lessonHeader {
+	font-size:800%;
+	color:black;
+	font-family:serif;
+}
+
+#lessonParagraph {
+	font-size:400%;
+	color:lightgray;
+	font-family:serif;
+}
+
+pre {
+	margin:50px;
+	font-size:12pt;
+}
+
+b{
+	color:blue;
+}
+
+</style>
+
+<script>
+function picChanger(val){
+	var src;
+	var alt;
+
+	if(val == 200){
+		src = "200px.jpg";
+		alt = "200 px image";
+	} else {
+		src = "400px.jpg";
+		alt = "400 px image";
+	}
+	
+	document.getElementById("img01").src = src;
+	document.getElementById("img01").alt = alt;
+}
+
+</script>
+
+</head>
+
+<body>
+<h1 id="lessonHeader">html javascript</h1>
+
+<p id="lessonParagraph">changing image src and alt</p>
+
+<img id="img01" src="200px.jpg" alt="200 px image"><br>
+
+<button onclick="picChanger(200);">200</button><button onclick="picChanger(400);">400</button><br>
+
+<pre>
+&lt;script&gt;
+
+function <b>picChanger(val)</b>{
+	var src;
+	var alt;
+
+	if(val == 200){
+		src = "200px.jpg";
+		alt = "200 px image";
+	} else {
+		src = "400px.jpg";
+		alt = "400 px image";
+	}
+	
+	document.getElementById("img01").<b>src</b> = src;
+	document.getElementById("img01").<b>alt</b> = alt;
+}
+
+&lt;/script&gt;
+
+...
+
+&lt;img id="img01" src="200px.jpg" alt="200 px image"&gt;&lt;br&gt;
+
+&lt;button onclick="<b>picChanger(200)</b>;"&gt;200&lt;/button&gt;
+&lt;button onclick="<b>picChanger(400)</b>;"&gt;400&lt;/button&gt;
+</pre>
+
+
+
+
+
+
+
+
+</body>
+</html>

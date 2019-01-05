@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>html classes</title>
+<style>
+
+pre {
+	margin:50px;
+	font-size:12pt;
+}
+
+b{
+	color:blue;
+}
+
+.city{
+	background-color:tomato;
+	color:white;
+	padding:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+<h1 style="font-size:800%;color:black;font-family:serif;">html classes</h1>
+
+<p style="font-size:400%;color:lightgray;font-family:serif;">class attribute in javascript</p>
+
+<button onclick="hideCityElements();">Click to hide city elements</button>
+
+<h2 class="city">Honolulu</h2>
+<p>Is the capital of the state of Hawaii.</p>
+
+<h2 class="city">Sacramento</h2>
+<p>Is the capital of the state of California</p>
+
+<h2 class="city">Albany</h2>
+<p>Is the capital of New York state.</p>
+
+<script>
+function hideCityElements(){
+	var x = document.getElementsByClassName("city");		//get collection of elements with class 'city'
+
+	for(var i=0;i<x.length;i++){						//iterate through collection
+		x[i].style.display = "none";					//for each item, set display to "none"
+	}	
+}
+
+</script>
+
+<pre>
+&lt;style&gt;
+
+<b>.city</b>{
+	background-color:tomato;
+	color:white;
+	padding:10px;
+}
+
+&lt;/style&gt;
+
+...
+
+&lt;button onclick="<b>hideCityElements()</b>;"&gt;Click to hide city elements&lt;/button&gt;
+
+&lt;h2 class="<b>city</b>"&gt;Honolulu&lt;/h2&gt;
+&lt;p&gt;Is the capital of the state of Hawaii.&lt;/p&gt;
+
+&lt;h2 class="<b>city</b>"&gt;Sacramento&lt;/h2&gt;
+&lt;p&gt;Is the capital of the state of California&lt;/p&gt;
+
+&lt;h2 class="<b>city</b>"&gt;Albany&lt;/h2&gt;
+&lt;p&gt;Is the capital of New York state.&lt;/p&gt;
+
+&lt;script&gt;
+function <b>hideCityElements()</b>{
+	var x = <b>document.getElementsByClassName("city")</b>;		//get collection of elements with class 'city'
+
+	for(var i=0;i&lt;x.length;i++){					//iterate through collection
+		x[i].style.display = "none";				//for each item, set display to "none"
+	}	
+}
+
+&lt;/script&gt;
+</pre>
+
+
+</body>
+</html>

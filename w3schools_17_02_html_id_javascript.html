@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>html id</title>
+<style>
+#lessonHeader {
+	font-size:800%;
+	color:black;
+	font-family:serif;
+}
+
+#lessonParagraph {
+	font-size:400%;
+	color:lightgray;
+	font-family:serif;
+}
+
+pre {
+	margin:50px;
+	font-size:12pt;
+}
+
+b{
+	color:blue;
+}
+
+</style>
+
+</head>
+
+<body>
+<h1 id="lessonHeader">html id</h1>
+
+<p id="lessonParagraph">id attribute and javascript</p>
+
+<h1 id="exampleHeader">Hello world!</h1>
+
+<button onclick="updateHeader();">Click me</button>
+
+<pre>
+&lt;h1 id="<b>exampleHeader</b>"&gt;Hello world!&lt;/h1&gt;
+
+&lt;button onclick="<b>updateHeader()</b>;"&gt;Click me&lt;/button&gt;
+
+&lt;script&gt;
+
+function <b>updateHeader()</b>{
+	document.getElementById("<b>exampleHeader</b>").innerHTML = "Goodbye world!";
+}
+
+&lt;/script&gt;
+</pre>
+
+
+
+<script>
+
+function updateHeader(){
+	document.getElementById("exampleHeader").innerHTML = "Goodbye world!";
+}
+
+</script>
+
+
+
+
+</body>
+</html>
