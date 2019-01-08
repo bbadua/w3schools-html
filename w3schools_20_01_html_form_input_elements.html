@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>html forms</title>
+<style>
+#lessonHeader {
+	font-size:800%;
+	color:black;
+	font-family:serif;
+}
+
+#lessonParagraph {
+	font-size:400%;
+	color:lightgray;
+	font-family:serif;
+}
+
+pre {
+	margin:50px;
+	font-size:12pt;
+}
+
+b{
+	color:blue;
+}
+
+</style>
+
+</head>
+
+<body>
+<h1 id="lessonHeader">html forms</h1>
+
+<p id="lessonParagraph">&lt;ouput&gt;</p>
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value);">
+value a&nbsp;&nbsp;&nbsp;<input type="number" name="a" value="0"><br><br>
+value b&nbsp;&nbsp;&nbsp;<input type="number" name="b" value="0"><br><br>
+output&nbsp;&nbsp;&nbsp;<output name="x" for="a b"><br><br>
+<input type="submit">
+</form>
+
+<pre>
+&lt;form <b>oninput</b>="<b>x</b>.value=parseInt(a.value)+parseInt(b.value);"&gt;
+
+value a&nbsp;&nbsp;&nbsp;&lt;input type="number" name="a" value="0"&gt;&lt;br&gt;&lt;br&gt;
+
+value b&nbsp;&nbsp;&nbsp;&lt;input type="number" name="b" value="0"&gt;&lt;br&gt;&lt;br&gt;
+
+output&nbsp;&nbsp;&nbsp;&lt;<b>output</b> name="<b>x</b>" for="a b"&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;input type="submit"&gt;
+&lt;/form&gt;
+</pre>
+
+
+</body>
+</html>

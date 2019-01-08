@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>html form</title>
+<style>
+#lessonHeader {
+	font-size:800%;
+	color:black;
+	font-family:serif;
+}
+
+#lessonParagraph {
+	font-size:400%;
+	color:lightgray;
+	font-family:serif;
+}
+
+pre {
+	margin:50px;
+	font-size:12pt;
+}
+
+b{
+	color:blue;
+}
+
+table, td, th {
+	border:1pt dotted black;
+	border-collapse:collapse;
+} 
+
+td, th {
+	text-align:left;
+	padding:10px;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+<h1 id="lessonHeader">html form</h1>
+
+<p id="lessonParagraph">input elements</p>
+
+<form>
+<table style="width:1100px;">
+<tr>
+<th style="width:15%;">Input type</th>
+<th style="width:15%;">Output</th>
+<th style="width:70%;">Code</th>
+</tr>
+
+<tr>
+<td>text</td>
+<td><input type="text" value="braden"></td>
+<td>&lt;input type="<b>text</b>" value="braden"&gt;</td>
+</tr>
+
+<tr>
+<td>select</td>
+<td>
+<select name="surfSpots">
+<option value="jack">Jack in the Box</option>
+<option value="sunset4">Sunset tower 4</option>
+<option value="sunset8">Sunset tower 8</option>
+<option value="sunset12">Sunset tower 12</option>
+<option value="sunset22">Sunset tower 22</option>
+<option value="anderson">Anderson Street</option>
+</select>
+</td>
+<td>
+&lt;<b>select</b> name="surfSpots"&gt;<br>
+&lt;<b>option</b> value="jack"&gt;Jack in the Box&lt;<b>/option</b>&gt;<br>
+&lt;<b>option</b> value="sunset4"&gt;Sunset tower 4&lt;<b>/option</b>&gt;<br>
+&lt;<b>option</b> value="sunset8"&gt;Sunset tower 8&lt;<b>/option</b>&gt;<br>
+&lt;<b>option</b> value="sunset12"&gt;Sunset tower 12&lt;<b>/option</b>&gt;<br>
+&lt;<b>option</b> value="sunset22"&gt;Sunset tower 22&lt;<b>/option</b>&gt;<br>
+&lt;<b>option</b> value="anderson"&gt;Anderson Street&lt;<b>/option</b>&gt;<br>
+&lt;<b>/select</b>&gt;
+</td>
+</tr>
+
+<tr>
+<td>select<br>
+(selected)
+</td>
+<td>
+<select name="surfSpots">
+<option value="jack">Jack in the Box</option>
+<option value="sunset4">Sunset tower 4</option>
+<option value="sunset8">Sunset tower 8</option>
+<option value="sunset12" selected>Sunset tower 12</option>
+<option value="sunset22">Sunset tower 22</option>
+<option value="anderson">Anderson Street</option>
+</select>
+</td>
+<td>
+&lt;select name="surfSpots"&gt;<br>
+&lt;option value="jack"&gt;Jack in the Box&lt;/option&gt;<br>
+&lt;option value="sunset4"&gt;Sunset tower 4&lt;/option&gt;<br>
+&lt;option value="sunset8"&gt;Sunset tower 8&lt;/option&gt;<br>
+&lt;option value="sunset12" <b>selected</b>&gt;Sunset tower 12&lt;/option&gt;<br>
+&lt;option value="sunset22"&gt;Sunset tower 22&lt;/option&gt;<br>
+&lt;option value="anderson"&gt;Anderson Street&lt;/option&gt;<br>
+&lt;/select&gt;
+</td>
+</tr>
+
+<tr>
+<td>select<br>
+(visible values)
+</td>
+<td>
+<select name="surfSpots" size="3">
+<option value="jack">Jack in the Box</option>
+<option value="sunset4">Sunset tower 4</option>
+<option value="sunset8">Sunset tower 8</option>
+<option value="sunset12">Sunset tower 12</option>
+<option value="sunset22">Sunset tower 22</option>
+<option value="anderson">Anderson Street</option>
+</select>
+</td>
+<td>
+&lt;select name="surfSpots" <b>size="3"</b>&gt;<br>
+&lt;option value="jack"&gt;Jack in the Box&lt;/option&gt;<br>
+&lt;option value="sunset4"&gt;Sunset tower 4&lt;/option&gt;<br>
+&lt;option value="sunset8"&gt;Sunset tower 8&lt;/option&gt;<br>
+&lt;option value="sunset12"&gt;Sunset tower 12&lt;/option&gt;<br>
+&lt;option value="sunset22"&gt;Sunset tower 22&lt;/option&gt;<br>
+&lt;option value="anderson"&gt;Anderson Street&lt;/option&gt;<br>
+&lt;/select&gt;
+</td>
+</tr>
+
+<tr>
+<td>select<br>
+(multipe values)
+</td>
+<td>
+<select name="surfSpots" size="6" multiple>
+<option value="jack">Jack in the Box</option>
+<option value="sunset4" selected>Sunset tower 4</option>
+<option value="sunset8">Sunset tower 8</option>
+<option value="sunset12" selected>Sunset tower 12</option>
+<option value="sunset22" selected>Sunset tower 22</option>
+<option value="anderson">Anderson Street</option>
+</select>
+</td>
+<td>
+&lt;select name="surfSpots" size="6" <b>multiple</b>&gt;<br>
+&lt;option value="jack"&gt;Jack in the Box&lt;/option&gt;<br>
+&lt;option value="sunset4"&gt;Sunset tower 4&lt;/option&gt;<br>
+&lt;option value="sunset8"&gt;Sunset tower 8&lt;/option&gt;<br>
+&lt;option value="sunset12"&gt;Sunset tower 12&lt;/option&gt;<br>
+&lt;option value="sunset22"&gt;Sunset tower 22&lt;/option&gt;<br>
+&lt;option value="anderson"&gt;Anderson Street&lt;/option&gt;<br>
+&lt;/select&gt;
+</td>
+</tr>
+
+<tr>
+<td>textarea<br>
+(configured w/ attributes)
+</td>
+<td>
+<textarea name="message" rows="5" cols="30">Cooper and Rooney love walks.</textarea>
+</td>
+<td>
+<pre>
+&lt;<b>textarea</b> name="message" <b>rows</b>="5" <b>cols</b>="30"&gt;
+   Cooper and Rooney love walks.
+&lt;<b>/textarea</b>&gt;
+</td>
+</tr>
+
+<tr>
+<td>textarea<br>
+(configured w/ CSS)
+</td>
+<td>
+<textarea name="message" style="width:225px;height:90px;">Cooper and Rooney love walks.</textarea>
+</td>
+<td>
+<pre>
+&lt;<b>textarea</b> name="message" <b>style="width:225px;height:90px;"</b>&gt;
+   Cooper and Rooney love walks.
+&lt;<b>/textarea</b>&gt;
+</td>
+</tr>
+
+<tr>
+<td>button</td>
+<td>
+<button type="button" onclick="alert('Hello world!');">Click me!</button>
+</td>
+<td>
+<pre>
+&lt;<b>button</b> type="<b>button</b>" onclick="alert('Hello world!');"&gt;Click me!&lt;/button&gt;
+</td>
+</tr>
+
+<tr>
+<td>datalist</td>
+<td>
+<input list="surfSpots">
+<datalist id="surfSpots">
+<option value="Jack in the Box">
+<option value="Sunset tower 4">
+<option value="Sunset tower 8">
+<option value="Sunset tower 12">
+<option value="Sunset tower 22">
+<option value="Anderson Street">
+</datalist>
+</td>
+<td>
+<pre>
+&lt;input list="<b>surfSpots</b>"&gt;
+&lt;<b>datalist</b> id="<b>surfSpots</b>"&gt;
+&lt;<b>option</b> value="Jack in the Box"&gt;
+&lt;<b>option</b> value="Sunset tower 4"&gt;
+&lt;<b>option</b> value="Sunset tower 8"&gt;
+&lt;<b>option</b> value="Sunset tower 12"&gt;
+&lt;<b>option</b> value="Sunset tower 22"&gt;
+&lt;<b>option</b> value="Anderson Street"&gt;
+&lt;<b>/datalist</b>&gt;>
+</pre>
+</tr>
+
+
+</table>
+</form>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+</body>
+</html>

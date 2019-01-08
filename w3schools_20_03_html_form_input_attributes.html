@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>html forms</title>
+<style>
+#lessonHeader {
+	font-size:800%;
+	color:black;
+	font-family:serif;
+}
+
+#lessonParagraph {
+	font-size:400%;
+	color:lightgray;
+	font-family:serif;
+}
+
+pre {
+	margin:50px;
+	font-size:12pt;
+}
+
+b{
+	color:blue;
+}
+
+b.orange{
+	color:orange;
+}
+
+table, td, th {
+	border:1pt dotted black;
+	border-collapse:collapse;
+}
+
+td, th {
+	text-align:left;
+	padding:10px;
+}
+
+
+</style>
+
+</head>
+
+<body>
+<h1 id="lessonHeader">html forms</h1>
+
+<p id="lessonParagraph">html input attributes</p>
+
+<form>
+<table style="width:1100px;">
+<tr>
+<th style="width:10%;">Attribute</th>
+<th style="width:30%;">Output</th>
+<th style="width:60%;">Code</th>
+</tr>
+
+<tr>
+<td>value</td>
+<td>FName:&nbsp;&nbsp;<input type="text" name="fname" value="Braden"></td>
+<td>
+<pre>
+&lt;input type="text" <b>value</b>="Braden"&gt;
+
+<b class="orange">NOTE:
+specifies the initial value for an input field</b>
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>readonly</td>
+<td>FName:&nbsp;&nbsp;<input type="text" name="fname" value="Cooper" readonly></td>
+<td>
+<pre>
+&lt;input type="text" name="fname" value="Cooper" <b>readonly</b>&gt;
+
+<b class="orange">NOTE:
+specifies that the input field is read only (cannot be changed)</b>
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>disabled</td>
+<td>FName:&nbsp;&nbsp;<input type="text" name="fname" value="Rooney" disabled></td>
+<td>
+<pre>
+&lt;input type="text" name="fname" value="Rooney" <b>disabled</b>&gt;
+
+<b class="orange">NOTE:
+specifies that the input field is disabled.  A disabled input field is unusable and un-clickable, and <br>its value will not be sent when submitting the form</b>
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>size</td>
+<td>FName:&nbsp;&nbsp;<input type="text" name="fname" value="Rooney" size="10"></td>
+<td>
+<pre>
+&lt;input type="text" name="fname" value="Rooney" <b>size</b>="10"&gt;
+
+<b class="orange">NOTE:
+specifies the size (in characters) for the input field</b>
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>maxlength</td>
+<td>
+FName:&nbsp;&nbsp;<input type="text" name="fname" value="Rooney" maxlength="10"><br>
+LName:&nbsp;&nbsp;<input type="text" name="lname" value="Badua">
+</td>
+<td>
+<pre>
+&lt;input type="text" name="fname" value="Rooney" <b>maxlength</b>="10"&gt;
+
+<b class="orange">NOTE:
+specifies the maximum allowed length for the input field</b>
+</pre>
+</td>
+
+
+</table>
+</form>
+
+<p id="lessonParagraph">html5 input attributes</p>
+
+<form>
+<table style="width:1100px;">
+<tr>
+<th style="width:10%;">Attribute</th>
+<th style="width:30%;">Example</th>
+<th style="width:60%;">Code</th>
+</tr>
+
+
+<tr>
+<td>autocomplete</td>
+<td><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_autocomplete" target="_blank">click</a></td>
+<td>
+<pre>
+&lt;form action="/action_page.php" <b>autocomplete</b>="on"&gt;
+  First name:&lt;input type="text" name="fname"&gt;
+  Last name: &lt;input type="text" name="lname"&gt;
+  E-mail: &lt;input type="email" name="email" <b>autocomplete</b>="off"&gt;
+  &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+<b class="orange">NOTE:
+specifies whether a form or input field should have autocomplete on or off.
+
+When autocomplete is on, the browser automatically completes the input values based on values that the <br>user has entered before.
+
+It is possible to have autocomplete "on" for the form, and "off" for specific input fields, or vice versa.
+
+The autocomplete attribute works with &lt;form&gt; and the following &lt;input&gt; types: text, search, <br>url, tel, email, password, datepickers, range, and color.</b>
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>nonvalidate</td>
+<td><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_form_novalidate" target="_blank">click</a></td>
+<td>
+<pre>
+&lt;form action="/action_page.php" <b>novalidate</b>&gt;
+  E-mail: &lt;input type="email" name="user_email"&gt;
+  &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+<b class="orange">NOTE:
+a &lt;form&gt; attribute.  When present, novalidate specifies that the<br> form data should not be validated when submitted.</b>
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>autofocus</td>
+<td><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_autofocus" target="_blank">click</a></td>
+<td>
+<pre>
+&lt;form action="/action_page.php"&gt;
+  First name:&lt;input type="text" name="fname" <b>autofocus</b>&gt;
+  Last name: &lt;input type="text" name="lname"&gt;
+  &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+<b class="orange">NOTE:
+specifies that the input field should automatically get focus when the page loads.<b>
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>form</td>
+<td><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_form" target="_blank">click</a></td>
+<td>
+<pre>
+&lt;form action="/action_page.php" id="<b>form1</b>"&gt;
+  First name: &lt;input type="text" name="fname"&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+
+...
+
+Last name: &lt;input type="text" name="lname" <b>form="form1"</b>&gt;
+
+<b class="orange">NOTE:
+specifies one or more forms an &lt;input&gt; element belongs to.  To refer to more<br> than one form, use a space-separated list of form ids.</b>
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>formaction</td>
+<td><a href="" target="_blank">click</a></td>
+<td>
+<pre>
+&lt;form <b>action="/action_page.php"</b>&gt;
+  First name: &lt;input type="text" name="fname"&gt;
+  Last name: &lt;input type="text" name="lname"&gt;
+  &lt;input type="submit" value="Submit"&gt;
+  &lt;input type="submit" <b>formaction</b>="/action_page2.php" value="Submit to another page"&gt;
+&lt;/form&gt;
+
+<b class="orange">NOTE:
+specifies a form's action.  overrides the action attribute of the &lt;form&gt; element</b>
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>formenctype</td>
+<td><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_formenctype" target="_blank">click</a></td>
+<td>
+<pre>
+&lt;form action="/action_page_binary.asp" method="post"&gt;
+  First name: &lt;input type="text" name="fname"&gt;
+  &lt;input type="submit" value="Submit"&gt;
+  &lt;input type="submit" <b>formenctype="multipart/form-data"</b> value="Submit as Multipart/form-data"&gt;
+&lt;/form&gt;
+
+<b class="orange">NOTE:
+specifies how form data should be encoded when submitted</b>
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>formmethod</td>
+<td><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_formmethod" target="_blank">click</a></td>
+<td>
+<pre>
+&lt;form action="/action_page.php" <b>method="get"</b>&gt;
+  First name: &lt;input type="text" name="fname"&gt;
+  Last name: &lt;input type="text" name="lname"&gt;
+  &lt;input type="submit" value="Submit"&gt;
+  &lt;input type="submit" <b>formmethod="post"</b> value="Submit using POST"&gt;
+&lt;/form&gt;
+
+<b class="orange">NOTE:
+defines the HTTP method for sending form-data to the action URL.<br>overrides the method attribute of the &lt;form&gt; element.<br>attribute can be used with type=<q>submit</q> and type=<q>image</q>.
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>formnovalidate</td>
+<td><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_formnovalidate" target="_blank">click</a></td>
+<td>
+<pre>
+&lt;form action="/action_page.php"&gt;
+  E-mail: &lt;input type="email" name="userid"&gt;
+  &lt;input type="submit" value="Submit"&gt;
+  &lt;input type="submit" <b>formnovalidate</b> value="Submit without validation"&gt;
+&lt;/form&gt;
+
+<b class="orange">NOTE:
+overrides the novalidate attribute of the &lt;form&gt; element.<br>attribute can be used with type="submit".</b>
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>formtarget</td>
+<td><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_formtarget" target="_blank">click</a></td>
+<td>
+<pre>
+&lt;form action="/action_page.php"&gt;
+  First name: &lt;input type="text" name="fname"&gt;
+  Last name: &lt;input type="text" name="lname"&gt;
+  &lt;input type="submit" value="Submit as normal"&gt;
+  &lt;input type="submit" <b>formtarget</b>="_blank" value="Submit to a new window"&gt;
+&lt;/form&gt;
+
+<b class="orange">NOTE:
+specifies a name or a keyword that indicates where to display the response that is received after submitting the form.
+The formtarget attribute overrides the target attribute of the &lt;form&gt; element.
+The formtarget attribute can be used with type="submit" and type="image".</b>
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>height and width</td>
+<td><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_height_width" target="_blank">click</a></td>
+<td>
+<pre>
+&lt;form action="/action_page.php"&gt;
+  First name: &lt;input type="text" name="fname"&gt;
+  Last name: &lt;input type="text" name="lname"&gt;
+  &lt;input type="image" src="img_submit.gif" alt="Submit" <b>width</b>="48" <b>height</b>="48"&gt;
+&lt;/form&gt;
+
+<b class="orange">NOTE:
+specify the height and width of an &lt;input type="image"&gt; element.
+</b>
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>list</td>
+<td><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_datalist" target="_blank">click</a></td>
+<td>
+<pre>
+&lt;input <b>list</b>="browsers"&gt;
+
+&lt;datalist id="browsers"&gt;
+  &lt;option value="Internet Explorer"&gt;
+  &lt;option value="Firefox"&gt;
+  &lt;option value="Chrome"&gt;
+  &lt;option value="Opera"&gt;
+  &lt;option value="Safari"&gt;
+&lt;/datalist&gt;
+
+<b class="orange">NOTE:
+refers to a &lt;datalist&gt; element that contains pre-defined options for an &lt;input&gt; element.
+</b>
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>min and max</td>
+<td><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_max_min" target="_blank">click</a></td>
+<td>
+<pre>
+&lt;form action="/action_page.php"&gt;
+
+  Enter a date before 1980-01-01:
+  &lt;input type="date" name="bday" <b>max</b>="1979-12-31"&gt;
+
+  Enter a date after 2000-01-01:
+  &lt;input type="date" name="bday" <b>min</b>="2000-01-02"&gt;
+
+  Quantity (between 1 and 5):
+  &lt;input type="number" name="quantity" <b>min</b>="1" <b>max</b>="5"&gt;
+
+  &lt;input type="submit"&gt;
+
+&lt;/form&gt;
+
+<b class="orange">NOTE
+specify the minimum and maximum values for an &lt;input&gt; element.
+work with the following input types: number, range, date, datetime-local, month, time and week.
+</b>
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>multiple</td>
+<td><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_multiple" target="_blank">click</a></td>
+<td>
+<pre>
+&lt;input type="file" name="img" <b>multiple</b>&gt;
+
+<b class="orange">NOTE:
+specifies that the user is allowed to enter more than one value in the &lt;input&gt; element.
+works with the following input types: email, and file.
+</b>
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>pattern</td>
+<td><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_pattern" target="_blank">click</a></td>
+<td>
+<pre>
+&lt;input type="text" name="country_code" <b>pattern</b>="[A-Za-z]{3}" title="Three letter country code"&gt;
+
+<b class="orange">
+specifies a regular expression that the &lt;input&gt; element's value is checked against.
+works with the following input types: text, search, url, tel, email, and password.
+</b>
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>placeholder</td>
+<td><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_placeholder" target="_blank">click</a></td>
+<td>
+<pre>
+&lt;form action="/action_page.php"&gt;
+  &lt;input type="text" name="fname" <b>placeholder</b>="First name"&gt;
+  &lt;input type="text" name="lname" <b>placeholder</b>="Last name"&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+
+<b class="orange">NOTE:
+specifies a hint that describes the expected value of an input field (a sample value or a short description of the format).
+The hint is displayed in the input field before the user enters a value.
+works with the following input types: text, search, url, tel, email, and password.
+</b>
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>required</td>
+<td><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_required" target="_blank">click</a></td>
+<td>
+<pre>
+&lt;input type="text" name="usrname" <b>required</b>&gt;
+
+<b class="orange">
+specifies that an input field must be filled out before submitting the form.
+works with the following input types: text, search, url, tel, email, <br>password, date pickers, number, checkbox, radio, and file.
+</b>
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>step</td>
+<td><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_step" target="_blank">click</a></td>
+<td>
+<pre>
+&lt;input type="number" name="points" step="3"&gt;
+
+<b class="orange">NOTE:
+specifies the legal number intervals for an &lt;input&gt; element.
+</b>
+</pre>
+</td>
+</tr>
+
+</table>
+</form>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+</body>
+</html>
